@@ -1,6 +1,8 @@
 # Dominick Walters
 ## Computer Science ePortfolio
 
+Welcome to my CS-499 ePortfolio, showcasing my enhancements and development growth.
+
 ## Professional Self-Assessment
 I am currently completing my Bachelor’s degree in Computer Science, and throughout this program I have developed a strong foundation in software development, problem solving, and system design. My experience includes working with programming languages such as C++ and Python, as well as technologies like OpenGL and MongoDB.
 
