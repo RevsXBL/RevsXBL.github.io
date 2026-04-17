@@ -16,8 +16,21 @@ These experiences align with my goal of becoming a software developer. I am part
 
 Overall, this ePortfolio reflects my growth as a developer and demonstrates my ability to learn, adapt, and improve my work over time.
 
+---
+
 ## Code Review
-[Download Code Review](CodeReview.docx)
+
+This code review focuses on the original versions of the artifacts I selected for enhancement in CS-499, specifically the C++ projects used for software design and algorithms, along with the database implementation used in the databases milestone. The goal of this review was to identify weaknesses in structure, logic, and data handling so I could improve them through the three enhancement phases.
+
+Looking at the original C++ code used in the software design and engineering milestone, the program worked, but the structure was pretty basic. Most of the logic was written in a way that made everything feel grouped together, which made it harder to follow and maintain. There wasn’t much separation between responsibilities, and some of the naming could have been clearer. This made the code functional, but not very scalable or easy to expand on.
+
+For the algorithms and data structures portion, the original implementation completed the task, but it wasn’t very efficient. There were areas where operations were repeated or could have been simplified. The logic worked, but it wasn’t optimized, especially when thinking about how it would perform with larger inputs. This showed that while the solution was correct, it could be improved by refining the algorithm and making better use of structure and flow.
+
+For the database artifact, the original version handled data in a very basic way using a text-based approach. It worked for storing and retrieving data, but it lacked organization and efficiency. The way data was accessed and processed could be improved, and there wasn’t much structure around how CRUD operations were handled. This made it functional, but not very reliable or scalable if the system were to grow.
+
+Based on this review, I focused my enhancements on three main areas: improving code structure and readability, optimizing logic and reducing unnecessary operations, and improving how data was handled and organized. Each of these directly aligned with the three milestones I completed in this course.
+
+Overall, this code review helped me see that just because code works doesn’t mean it’s well-designed. Going through this process gave me a clear understanding of where my code needed improvement and helped guide the changes I made. It also showed my ability to look at my own work critically and improve it in a way that makes it more efficient, maintainable, and easier to understand.
 
 ---
 
