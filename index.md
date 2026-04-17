@@ -71,9 +71,7 @@ In the enhanced version, I improved CRUD operations and optimized how data is qu
 ## Narratives
 ### Software Engineering Narrative
 In this enhancement, I focused on improving the overall structure and organization of the code. The original version had limited modularity, which made it harder to maintain and expand. I refactored the code by separating responsibilities into clearer sections, improving readability, and using better naming conventions. These changes demonstrate my understanding of software design principles and my ability to create more maintainable and scalable code.
-
 ### Algorithms & Data Structures Narrative
 This enhancement focused on improving efficiency through better use of algorithms and data structures. The original implementation worked but included unnecessary operations that impacted performance. I improved the logic by refining the algorithm and reducing redundancy. These changes demonstrate my ability to analyze performance and apply more efficient solutions.
-
 ### Databases Narrative
 In this enhancement, I improved how the application interacts with the database by refining CRUD operations and optimizing data handling. The original version lacked efficiency in how data was retrieved and managed. I improved query structure and data organization, resulting in a more reliable and scalable system. This demonstrates my ability to work effectively with database-driven applications.
