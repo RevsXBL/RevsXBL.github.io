@@ -1,0 +1,73 @@
+from pymongo import MongoClient
+import logging
+
+logging.basicConfig(filename="database.log", level=logging.INFO)
+
+class AnimalShelter(object):
+
+    def __init__(self, username, password):
+
+        try:
+            self.client = MongoClient(
+                f'mongodb://{username}:{password}@localhost:27017/?authSource=AAC'
+            )
+            self.database = self.client['AAC']
+            logging.info("Database connection established")
+
+        except Exception as e:
+            logging.error(f"Database connection failed: {e}")
+            raise
+
+
+    def create(self, data):
+
+        if not isinstance(data, dict) or len(data) == 0:
+            raise ValueError("Data must be a non-empty dictionary")
+
+        try:
+            result = self.database.animals.insert_one(data)
+            logging.info("Document inserted")
+            return result.acknowledged
+
+        except Exception as e:
+            logging.error(f"Create operation failed: {e}")
+            return False
+
+
+    def read(self, query):
+
+        try:
+            results = list(self.database.animals.find(query))
+            logging.info("Read operation successful")
+            return results
+
+        except Exception as e:
+            logging.error(f"Read operation failed: {e}")
+            return []
+
+
+    def update(self, query, new_values):
+
+        if not isinstance(new_values, dict):
+            raise ValueError("Update values must be a dictionary")
+
+        try:
+            result = self.database.animals.update_many(query, {"$set": new_values})
+            logging.info(f"Updated {result.modified_count} documents")
+            return result.modified_count
+
+        except Exception as e:
+            logging.error(f"Update operation failed: {e}")
+            return 0
+
+
+    def delete(self, query):
+
+        try:
+            result = self.database.animals.delete_many(query)
+            logging.info(f"Deleted {result.deleted_count} documents")
+            return result.deleted_count
+
+        except Exception as e:
+            logging.error(f"Delete operation failed: {e}")
+            return 0

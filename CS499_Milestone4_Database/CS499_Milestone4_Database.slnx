@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CS499_Milestone4_Database/CS499_Milestone4_Database.vcxproj" Id="5d1f4025-e940-4aac-8da6-c7b0cb68baf9" />
+</Solution>
